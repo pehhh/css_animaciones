@@ -1,0 +1,635 @@
+/*body*/
+body {
+    margin: 0 auto;
+    background-color: white;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    
+}
+/*body first letter*/
+nav ul li::first-letter, h2::first-letter,h4::first-letter,p::first-letter, address::first-letter, h3::first-letter,span::first-letter  {
+    font-size: 1.5em;
+}
+/*header*/
+header {
+    height: 25rem;
+    width: 100%;
+    
+}
+.centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scale40 {
+    transform: scale(0.4);
+}
+
+.mouseover:hover {
+    transform: scale(0.6);
+    transform: rotate(-15deg);
+    opacity: 0.5;    
+}
+/*imagen michelin*/
+.michelin {
+    width: 12.75rem;
+    height: 12.75rem;
+    bottom: 11.25rem;   
+    position: relative;  
+    
+}
+.michelin > img {
+    width: 12.5rem;
+    position: relative;
+    z-index: 3; 
+    
+}
+/*sello covid-free*/
+.sello {
+    width: 3.7rem;
+    float: right;
+    position: relative;
+    bottom: 23.37rem;
+    right: 3rem;
+}
+.sello >img {
+    width: 6.25rem;
+}
+/*banner*/
+.banner {
+    background-image: linear-gradient(0deg, rgb(250, 122, 66), rgb(251, 201, 163), rgb(250, 122, 66));
+    height: 8.75rem;
+    width: 1.25rem;
+    position:fixed;
+    top: 6.25rem;
+    right: 0;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;  
+    z-index: 3; 
+}
+.banner:hover {
+    opacity: 0.7;
+    transform: scaleX(2);
+}
+.banner>span{
+    display: none;
+    position: relative;
+    right: 6.875rem;
+    top: 50px;
+    background-color: rgb(133, 133, 133);
+    width: 6.25rem;
+    text-align: center;
+    color: white;
+}
+.banner:hover > span {
+    display: block;
+    font-size: 0.7rem ;
+    
+}
+.banner:active {
+    transform: scaleX(15);
+    background-image: url(../img/cuponDescuento.jpg);
+    background-size: 65% 65%;
+    background-repeat: no-repeat;
+    background-position: -10% 50%;
+    border: grey 1px solid;
+    background-color: white;
+    color: black;    
+}
+.banner:active > span {
+    display: none;   
+    font-family : 'Courier New', Courier, monospace; 
+}
+.h100px {
+    height: 6.25rem;
+    width: 100%;
+}
+.navegacion {
+    background: linear-gradient(90deg, rgb(122, 62, 46), rgb(250, 242, 214),rgb(122, 62, 46));
+    width: 100%;
+    text-align: center;
+    border: black 1px solid;
+    height: 6.25rem;
+    box-shadow: 0 0 5px inset;
+    color: black;
+}
+.navegacion>div> ul > li {
+    display: inline-block;
+    list-style: none;
+    padding: 1.25rem;
+    color: black; 
+    font-weight: 700;     
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+.floatleft {
+    float: left;
+}
+.floatright {
+    float: right;
+}
+/*redes sociales*/
+.redes>div>ul > li {
+    display: inline-block;
+    list-style: none;
+    padding: 0.625rem;    
+}
+.fa-twitter {
+    color: turquoise;
+}
+.fa-facebook-f {
+    color: blue;
+}
+.fa-pinterest {
+    color: red;
+}
+.fa-instagram {
+    color: blueviolet;
+}
+.fa-google-plus-g {
+    color: red;
+}
+.opac:hover{
+    opacity: 0.5;
+}
+#telefono {
+    position: relative;
+    right:1.7rem;
+    color: sandybrown;    
+    text-align: right;
+}
+h2,h3 {
+    text-align: center;
+    color: rgb(53, 127, 195);
+}
+#carta  h4 {
+    color: rgba(185, 14, 14, 0.965);
+}
+#horario  h4  {
+    color: rgb(53, 127, 195);
+}
+/*imagen sushi background fixed index*/
+main > section > div > h2{
+    margin-bottom: 80px;
+}
+.imgsshi{
+    width:100%;
+    height: 15.625rem;
+    background-repeat: no-repeat;
+    background-position: 20% 80%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../img/fr1_nigirisushi.jpg");
+    box-shadow: 0 0 35px inset;
+    border: gray solid 2px;
+}
+.borderl {
+    border-left: 5px rgb(70,130,180) solid;
+    padding-left: 3rem;
+    margin-left: 3rem;
+   line-height: initial;
+}
+.borderr {
+    border-right: 5px rgb(70,130,180) solid;
+    padding-right: 3rem;
+    margin-right: 3rem;
+}
+/*article index cita*/
+.cita {
+    height: 12.75rem;
+    width: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+#gerente {
+    position: relative;
+    top: 5rem;
+    right:3.1rem;
+    width: 23.75rem;
+    font-style: normal;
+}
+hr {
+    height: 5px;
+    width: 50%;
+    background-color: black;
+}
+/*article index entrega a domicilio*/
+.contenedorent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin-top: 4rem; 
+    margin-bottom: 4rem;
+}
+.img200 {    
+    height: 12.5rem;    
+}
+.entrega {
+    position: relative;
+    bottom: 2rem;
+    width: 60%;
+}
+.txtcenter {
+    text-align: center;
+    margin:0.4rem;
+}
+/*footer*/
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    clear: both;
+    margin: 0 auto;
+      
+}
+.footerdiv {
+    width: 31%;
+    margin-top: 4.375rem;
+    margin-bottom: 5rem;
+    padding: 0.5rem;   
+}
+.clearleft {
+    clear: left;
+}
+.borderlfoot {
+    border-left: white 3px solid;    
+}
+footer h4 {
+    color: orange;    
+}
+footer>div>h4 > span {
+    color: red;
+}
+.finpag{
+    padding-bottom: 3rem ; 
+}
+/*index galeria*/
+.galeria {
+    margin-top: 3.25rem;
+}
+.extgaleria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 5rem;  
+    margin-bottom: 5rem;  
+}
+.imgext {
+    width: 11.25rem;
+    border: gray 1px solid;
+    border-radius: 1.25rem;
+    margin-top: 1.5rem;    
+}
+.imgint {
+    width: 9.375rem;
+    border: gray 1px solid;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    height: 80%;
+    position: relative;
+    top: 1rem;
+    margin-left: auto;
+    margin-right: auto;    
+}
+.imgext  p {
+    text-align: center;
+}
+#superbento {
+    width: 26.25rem;
+    position: relative;
+    right: 6.25rem;    
+}
+#besodragon {
+    width: 31.25rem;
+    position: relative;
+    right: 8.75rem;  
+    top: 0.625rem;  
+}
+#bentofantasia {
+    width: 28.125rem;
+    position: relative;
+    right: 6.25rem;  
+    top: 1.225rem;  
+}
+#bentofantasia {
+    width: 28.125rem;
+    position: relative;
+    right: 6.25rem;  
+    top: 1.225rem;  
+}
+#gambas {
+    width: 31.25rem;
+    position: relative;
+    right: 6.25rem;  
+    top: 1.225rem;  
+}
+#mini {
+    width: 31.25rem;
+    position: relative;
+    right: 6.25rem;  
+    top: 1.225rem;   
+}
+#atunp {
+    width: 18.75rem;
+    position: relative;
+    right: 3.2rem;  
+    top: 3.8rem;  
+}
+/*equipo grid*/
+.gridequipo {
+    height: 26.25rem;
+    display: grid;
+    grid-template-columns: 25% 30% 14%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 0.625rem;
+}
+.gridimg {
+    border-radius: 0.625rem;
+    height: 100%;
+    width: 100%;   
+}
+#andrew {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    filter: sepia();
+}  
+#andrew:hover {
+    animation: rota1 0.5s 1 linear;    
+}
+@keyframes rota1 {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+#joe {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#joe:hover {
+    animation: rota2 0.5s 1 linear;   
+}
+@keyframes rota2 {
+    0% {
+      transform: rotateX(360deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+}
+#nakane {
+    grid-column: 2/3;
+    grid-row: 1/3;    
+}
+#nakane:hover {
+    animation: rota3 4s 1 linear;
+}
+@keyframes rota3 {
+    0% {
+        transform: rotate(50deg);
+    }
+    50% {
+        transform: scale(0.5);
+        
+    }
+    100% {
+        
+        animation-play-state: paused;
+    }
+}
+#hichito {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    filter: grayscale();
+}
+#hichito:hover {
+    animation: rota4 0.5s 1 linear;
+}
+@keyframes rota4 {
+    0% {
+      transform: rotateY(360deg);
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+}
+#fred {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    filter: sepia();
+}
+#fred:hover {
+    transform: skewX(30deg);
+    filter: sepia();
+}
+/*equipo citas e imagenes*/
+#equipotxt {
+    margin-left: 18.75rem;
+    margin-right: 18.75rem;
+    font-size: 0.81rem;
+    margin-top: 4.7rem;    
+}
+.img100 {
+    height: 6.25rem;
+    width: 6.25rem;
+    border-radius: 50%;    
+    box-shadow: 0 0 10px inset;    
+}
+#and {
+    background-image: url(../img/andrewNishimura.jpg);
+    background-size: 16.25rem;
+    background-position: 70% 30%;
+}
+#hic {
+    background-image: url(../img/hichitoNishimura.jpg);
+    background-size: 21.875rem;
+    background-position: 80% 10%;
+}
+#fre {
+    background-image: url(../img/fredNishimura.jpg);
+    background-size: 21.875rem;
+    background-position: 80% 10%;
+}
+#nak {
+    background-image: url(../img/nakaneNishimura.jpg);
+    background-size: 11.25rem;
+    background-position: 60% 10%;
+}
+#jo {
+    background-image: url(../img/joeNishimura.jpg);
+    background-size: 11.25rem;
+    background-position: 50% 10%;
+
+}
+.roundimg:hover {
+    animation: updown 0.3s 1 linear;
+}
+@keyframes updown {
+    0% {
+      transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+address {
+    text-align: right;
+    font-size: 0.625rem;
+    color: gray;
+}
+.marginl100 {
+    margin-left: 6.25rem;
+}
+.marginl150 {
+    margin-left: 9.375rem;
+}
+
+hgroup{
+    color: rgb(17, 235, 82);
+}
+ol {
+    list-style: none;
+}
+/*carta menu*/
+#menu div li{
+    list-style: none;
+    font-weight: 500;    
+}
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    line-height: 3.75rem;        
+}
+#carta h2 {
+    margin-bottom: 4.375rem;
+}
+.mitad {
+    width: 50%;
+}
+#menu h3 {
+    line-height: 4.375rem;
+    position: relative;
+    left: 0.5rem;
+}
+#carta {
+    margin-bottom: 6.25rem;
+}
+.backgimg { 
+    background: linear-gradient(rgba(255, 255, 255, 0.87), rgba(255, 255, 255, 0.918)), url("../img/sushitoRestaurant.jpg");
+    background-size: 100% 100%;
+    border: gray 2px solid;
+}
+.marginbot {
+    margin-bottom: 12.5rem;
+}
+/*localizacion mapa*/
+.borde{
+    border: black 1px solid;
+    border-radius: 1.9rem;
+    margin-right: 10%;
+}
+.bordermap {
+    border-radius: 20px 200px;
+    border: black 1px solid;
+    overflow: hidden;
+    width: 28.125rem;
+    margin-left: 10%;
+    height: 28.125rem;
+    margin-bottom: 2rem;
+}
+/*localizacion horario*/
+.horario {
+    height: 28.125rem;
+    line-height: 1.9rem;
+    width: 34rem;
+}
+.horario h3 {
+    margin: 1.9rem; 
+    margin-top: 3rem;   
+}
+.horario >div > ul > li {
+    font-weight: 900;    
+}
+.horario >div > ul > li > ol {
+    font-weight: normal;    
+}
+#telreserva {
+    text-align: center;
+    margin: 2.5rem;    
+}
+#telreserva > h4 {
+    color: rgb(53, 127, 195);
+}
+#telreserva > p{
+    text-align: left;
+}
+.imgsshi2{ 
+    width:100%;
+    height: 15rem;
+    box-shadow: 0 0 45px inset;
+    border: gray solid 2px;
+    background-repeat: no-repeat;
+    background-position: 20% 80%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../img/fr2_sushitable.jpg");
+    margin-top: 100px;
+    margin-bottom: 7rem;
+}
+.overf{
+    overflow: hidden;
+}
+.opacback {
+    opacity: 0.4;    
+}
+/* media query para un disminucion de pantalla por debajo de 800px*/
+@media screen and (max-width: 800px) {
+    .navegacion {
+        height: 20rem;
+        text-align: left; 
+        margin-bottom: 5rem;  
+    }
+    .navegacion>div> ul > li {
+        display:block;
+        list-style: none;
+        padding: 20px;    
+    }
+    .citareduce {
+        font-size: 0.5rem;
+        margin-bottom: 5rem;    
+    }
+    address{
+        font-size: 0.4rem;
+    }
+    
+}
+/* media query para un disminucion de pantalla por debajo de 1040px*/
+@media screen and (max-width: 1040px) {
+    .citareduce {
+        font-size: 0.6rem;
+        margin-bottom: 5rem;
+    }
+    address{
+        font-size: 0.5rem;
+    }
+}
+@media screen and (max-width: 560px) {
+    #telefono > h4 {
+        font-size: 0.7rem;
+    }
+}
